@@ -1,36 +1,20 @@
 import React from 'react';
 import '../css/App.css';
-import { Greet } from "./Greet";
-import { Person } from './Person';
-import { PersonList } from './PersonList';
+import { Greet } from './Greet';
+import { Heading } from './Heading';
+import { Oscar } from './Oscar';
+import { Status } from './Status';
 
 const App = () => {
 
-  const personName = {
-    first: 'Romain',
-    last: 'HENRY'
-  }
-
-  const nameList = [
-      {
-        first: 'Bruce',
-        last: 'WAYNE'
-      },
-      {
-        first: 'Clark',
-        last: 'KENT'
-      },
-      {
-        first: 'Diana',
-        last: 'ROSS'
-      }
-  ]
-
   return (
     <div className="App">
-      <Greet name="Romain" messageCount={15} isLoggedIn={false} />
-      <Person name={personName} />
-      <PersonList names={nameList} />
+      <Status status='loading' />
+      <Heading>Placeholder Text</Heading>
+      <Oscar>
+        <Heading>Oscar goes to Tom Hanks</Heading>
+      </Oscar>
+      <Greet name="Henry Romain" isLoggedIn={true} />
     </div>
   );
 }
