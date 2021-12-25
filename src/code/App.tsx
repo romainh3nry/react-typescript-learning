@@ -1,10 +1,12 @@
 import React from 'react';
 import '../css/App.css';
+import { Greet } from "./Greet";
 
-export const App = () => {
+const App = () => {
   return (
     <div className="App">
       <h1>Hello there</h1>
+      <Greet name="Romain" />
     </div>
   );
 }
