@@ -6,6 +6,7 @@ import { Greet } from './Greet';
 import { Heading } from './Heading';
 import { Input } from './Input';
 import { Oscar } from './Oscar';
+import { LoggedIn } from './state/LogginIn';
 import { Status } from './Status';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <Input value='' />
       <Button handleClick={e => console.log('clicked', e)} />
       <Container styles={{border: "1px solid red"}} />
+      <LoggedIn />
     </div>
   );
 }
