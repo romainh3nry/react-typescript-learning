@@ -1,12 +1,20 @@
 import React from 'react';
 import '../css/App.css';
-import {MutableRef} from "./ref/MutableRef";
+import { List } from './generics/List';
+
 
 const App = () => {
 
   return (
     <div className="App">
-      <MutableRef />
+      <List 
+        items={['Superman', 'Batman', 'Wonder Woman']}
+        onClick={(item) => console.log(item)}
+      />
+      <List 
+        items={[1, 2, 3]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 }
