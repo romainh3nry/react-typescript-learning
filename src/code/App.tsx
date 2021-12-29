@@ -1,15 +1,12 @@
 import React from 'react';
 import '../css/App.css';
-import { ThemeContextProvider } from './context/ThemeContext';
-import { Box } from './context/Box';
+import {MutableRef} from "./ref/MutableRef";
 
 const App = () => {
 
   return (
     <div className="App">
-      <ThemeContextProvider>
-        <Box />
-      </ThemeContextProvider>
+      <MutableRef />
     </div>
   );
 }
